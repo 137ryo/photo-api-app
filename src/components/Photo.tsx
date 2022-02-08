@@ -5,8 +5,10 @@ export const Photo = (props: PhotoType) => {
   const { albumId, id, title, url, thumbnailUrl } = props;
   return (
     <>
-      <p>{`${albumId} _ ${id} [${title}] ${url}`}</p>
-      <Img id={id} />
+      <p>{`Photo No : ${albumId} - ${id}`}</p>
+      <p>{`Title : ${title}`}</p>
+      <img src={thumbnailUrl} />
+      <hr />
     </>
   );
 };
