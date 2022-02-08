@@ -1,2 +1,2 @@
-# photo-api-app
+# album-api-app
 Created with CodeSandbox
