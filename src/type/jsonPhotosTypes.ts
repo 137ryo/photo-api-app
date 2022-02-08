@@ -1,7 +1,6 @@
-export type PhotoType = {
+export type JsonPhotosType = {
   albumId: number;
   id: number;
   title: string;
-  url: string;
   thumbnailUrl: string;
 };

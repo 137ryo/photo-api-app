@@ -1,4 +1,4 @@
-export type AlbumType = {
+export type PixabayType = {
   id: number;
   // pageURL: string;
   // type: string;

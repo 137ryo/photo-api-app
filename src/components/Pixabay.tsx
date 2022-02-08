@@ -1,6 +1,6 @@
-import { AlbumType } from "../type/album";
+import { PixabayType } from "../type/pixabayTypes";
 
-export const Album = (props: AlbumType) => {
+export const Pixabay = (props: PixabayType) => {
   const { id, userImageURL } = props;
   return (
     <>
