@@ -28,8 +28,11 @@ export default function App() {
     []
   );
   const [albumPixabay, setAlbumPixabay] = useState<Array<PixabayType>>([]);
+
+  // Pixabay選択状態(falseならJsonPlaceHolder)
   const [isPixabaySelect, setIsPixabaySelect] = useState(false);
 
+  // JsonPlaceHolderのAPIを取得
   const onClickFeachDataJsonPhotos = () => {
     axios
       .get<Array<JsonPhotosType>>("https://jsonplaceholder.typicode.com/photos")
@@ -39,6 +42,7 @@ export default function App() {
       });
   };
 
+  // PixabayのAPIを取得
   const onClickFeachDataPixabay = () => {
     axios
       .get("https://pixabay.com/api/?key=25609556-1b7bd31363d6a0d9c2a010f12")
@@ -48,7 +52,7 @@ export default function App() {
       });
   };
 
-  //
+  // JsonPlaceHolderのアルバムNoをランダムに一つ取得
   const albumNo = Math.floor(Math.random() * (10 - 1)) + 1;
 
   return (
