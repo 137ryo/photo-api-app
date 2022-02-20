@@ -1,6 +1,4 @@
 # album-api-app
-Created with CodeSandbox
-<br />
 <br />
 React axios API<br/>
 editor ： codesandbox<br/>
